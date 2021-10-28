@@ -1,0 +1,19 @@
+.search-bar {
+    position: relative;
+    border: 1px solid #DCDCDC;
+    .search-input-icon{
+      color: #DCDCDC;
+      position: absolute; 
+      top: 5px; 
+      left: 5px;
+    }
+    input {
+      padding-left: 20px;
+      border: 0;
+      width: 100%;
+      line-height: 2;
+    }
+    input:focus { 
+      outline: none !important;
+    }
+  }

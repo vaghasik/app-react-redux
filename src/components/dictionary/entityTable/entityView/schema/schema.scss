@@ -1,0 +1,149 @@
+.schema {
+  margin-top: -15px;
+  .schema-details {
+    .schema-virsio-download {
+      border-left: 1px solid #eaeaea;
+      border-right: 1px solid #eaeaea;
+      padding-left: 15px;
+      .schema-version {
+        padding-right: 15px;
+        cursor: pointer;
+        color: #1A8AF4;
+      }
+      .schema-dowmload-icon {
+        cursor: pointer;
+        color: #666;
+      }
+    }
+    table {
+      width: 50vw;
+      table-layout: fixed;
+      border: 1px solid #eaeaea;
+    }
+    .schema-table-header{
+      thead  tr {
+        .schema-fields-header {
+          width: 40%;
+        }
+        .schema-header-name{
+          line-height: 2;
+          padding: 5px 0;
+        }
+        th {
+          background-color: #f7f7f7;
+          padding: 0 15px 5px 15px;
+          border-right: 1px solid #eaeaea;
+        }
+      }
+    }
+    .schema-table-body{
+      max-height: calc(100vh - 380px);
+      width: 50vw;
+      overflow: auto;
+      overflow-y: scroll;
+      overflow-x: hidden; //hide scroll
+      border-bottom: 1px solid #eaeaea;
+      border-right: 1px solid #eaeaea;
+      //border-bottom: 1px solid #FBF8F8;
+      border-radius: 0 0 5px 5px;
+      table {
+        border-top: none;
+      }
+      // tbody tr:nth-child(even) {
+      //   background-color: #f7f7f7;
+      // }
+      tr {
+        line-height: 2;
+        .schema-fields-data {
+          width: 40%;
+        }
+        td {
+          padding: 0 15px;
+          //border-right: 1px solid #eaeaea;
+          border-right: 1px solid #FBF8F8;
+          border-bottom: 1px solid #FBF8F8;
+          .table-index {
+            margin: 0 10px;
+            color: #DCDCDC;
+            //font-weight: 600;
+            display: inline-block;
+            min-width: 15px;
+          }
+          .fielsd-wrap {
+            //https://stackoverflow.com/questions/5474871/html-how-can-i-show-tooltip-only-when-ellipsis-is-activated
+            position: relative;
+            display: inline-block;
+            width: 75%;
+            vertical-align: bottom;
+          }
+          .schema-col-name {
+            //display: inline-block;
+            //position: relative;
+            white-space: nowrap; 
+            //width: 75%;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            vertical-align: bottom;
+
+            pointer-events: none;
+            //float: left;
+            //width: 50px;
+          }
+          .schema-col-name:after {
+            content:"";
+            display: block;
+            position: absolute;
+            top: 0; //MUST need for line
+            width: 100%; //MUST need 100%
+            height: 100%; //MUST need 100%
+            z-index: 1;
+            //border: 1px solid red; /* for visualization only */
+            pointer-events:initial;
+          }
+          .schema-col-name:hover:after{
+            cursor: pointer;
+          }
+          .schema-comment {
+            width: 85%;
+            display: inline-block;
+            word-wrap: break-word;
+          }
+          .comment-textarea {
+            width: 80%;
+            height: 20px;
+          }
+          .comment-textarea:focus {
+            outline: none;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+    .schema-type {
+      float: right;
+      color: #1A8AF4;
+    }
+    .schema-icons {
+      float: right;
+      color: #ccc;
+      border-left: 1px solid #FBF8F8;
+      padding-left: 5px;
+      .schema-icon  {
+        margin: 0 5px;
+        cursor: pointer;
+        color: #666;
+      }
+    }
+    .button-container {
+      border-left: 1px solid #eaeaea;
+      border-right: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      .priview-btn {
+        float: right;
+        margin: 5px 5px 5px 0;
+        background: #1A8AF4 !important;
+        font-size: 0.9em !important;
+      }
+    }
+  }
+}

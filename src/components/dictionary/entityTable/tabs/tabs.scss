@@ -1,0 +1,37 @@
+.tabs {
+  .one-tab {
+    li {
+      border-radius: 5px !important;
+      border: none !important;
+    }
+  }
+  ul {
+    padding-left: 0;
+    .tabs-active {
+      background-color: #1A8AF4;
+      color:#fff;
+    }
+    .tabs-active:hover {
+      background-color: #1A8AF4;
+      color:#fff;
+    }
+    li { 
+      display: inline; 
+      list-style: none;
+      padding: 5px 15px;
+      border: 1px solid #eaeaea;
+      border-right: none;
+      cursor: pointer;
+    }
+    li:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+    li:last-child {
+      border-radius: 0 5px 5px 0;
+      border-right: 1px solid #eaeaea;
+    }
+    li:hover {
+      color: #1A8AF4;
+    }
+  }
+}

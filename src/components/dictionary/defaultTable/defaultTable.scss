@@ -1,0 +1,33 @@
+.default-table-row {
+  .default-table-col {
+    .apps-name {
+    }
+    table {
+      //background-color: cornflowerblue;
+      width: 75vw;
+      max-height: 90vh;
+      table-layout: fixed;
+    }
+    table, td, th {  
+      border: 1px solid #DCDCDC;
+      padding: 5px 10px;
+    }
+    th {
+      background-color: #d3d3d3;
+      font-weight: 400;
+    }
+    .default-table-body {
+      height: 80vh;
+      width: 75vw;
+      overflow: auto;
+      overflow-y: scroll;
+      // a:hover { 
+      //   color: #1A8AF4;
+      // }
+      table td:first-child {
+        color: #1A8AF4;
+        cursor: pointer;
+      }
+    }
+  }
+}

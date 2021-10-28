@@ -1,0 +1,49 @@
+.header-row {
+  height: 30px;
+  width: 100vw;
+  background-color: #FAFAFA;
+  .xyz-logo-img {
+    height: 22px;
+    width: 90px;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+  }
+  .header-menu {
+    .header-menu-link {
+      color:#a3a3b0;
+	    font-size: 15px;
+      cursor: pointer;
+      .header-menu-icon {
+        margin: 0 0 -2px 15px;
+        &:hover{
+          -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3);
+          color: #3a3a3a;
+        }
+      }
+    }
+    .active { //TODO need to remove inline for active
+      color: #3a3a3a;
+    }
+  }
+  .header-row-right {
+    display: flex;
+    justify-content: flex-end;
+    .header-right-icon {
+      color:#a3a3b0;
+      cursor: pointer;
+      font-size: 15px;
+      margin: -22px 0 0 15px;
+      &:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        color: #3a3a3a;
+      }
+    }
+    .fa-bug-icon {
+      margin: -18px 15px 0 15px;
+    }
+  }
+}

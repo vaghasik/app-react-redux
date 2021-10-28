@@ -1,0 +1,46 @@
+.dataset-list-row {
+  .dataset-list-col {
+    //background-color: pink;
+    border-right: 1px solid #eaeaea;
+    height: 85vh;
+    .dataset-list {
+      max-height: 75vh;
+      overflow: scroll;
+      //background-color: powderblue;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        .activeDatasetList {
+          background-color: #1A8AF4;
+          color: #fff;
+        }
+        .activeDatasetList:hover { 
+          background-color: #1A8AF4;
+          color: #fff;
+        }
+        li {
+          border-bottom: 1px solid #eaeaea;
+          line-height: 2;
+          cursor: pointer;
+          .list-index {
+            margin: 0 10px;
+            color: #DCDCDC;
+            font-weight: 600;
+            display: inline-block;
+            min-width: 15px;
+          }
+          .list-data {
+            padding-left: 5px;
+          }
+        }
+        // li:nth-child(-n+9) {
+        //   padding: 0 0 0 4px;
+        // }
+        li:hover { 
+          //background-color: #FAFAFA;
+          color: #1A8AF4;
+        }
+      }
+    }
+  }
+}

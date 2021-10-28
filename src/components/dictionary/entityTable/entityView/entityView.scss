@@ -1,0 +1,36 @@
+.entity-view {
+  margin-left: 20px;
+  width: 50vw;
+  //height: 70vh;
+  .dataset-name {
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    .pencil-icon {
+      margin-left: 15px;
+    }
+    .entity-title-textarea {
+      width: 100%;
+      height: auto;
+    }
+  }
+  ul {
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+
+    padding: 15px;
+    margin-bottom: 0;
+    .activeTab{
+      border-bottom: 2px solid #1A8AF4;
+      padding-bottom: 2px;
+    }
+    li { 
+      display: inline; 
+      list-style: none;
+      margin: 0 15px 0 0;
+      cursor: pointer;
+    }
+    li:hover {
+      color: #1A8AF4;
+    }
+  }
+}
